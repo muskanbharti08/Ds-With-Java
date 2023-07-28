@@ -10,22 +10,26 @@ public class SInglyLinkedList {
         obj.Print();
 
     }
-    Node head;
-    class Node{
+    Node head;   // declaring head is one of the Node
+    class Node{   // creating a class for structure of node, a node contains two parts one is data and another one is next
         int data;
         Node Next;
         public Node(int data){
-            this.data = data;
-            this.Next = null;
+            this.data = data;   // data part containing  any data
+            this.Next = null;   // Next part containing null
         }
     }
-    public void InsertFirst(int data){
-        Node N1 = new Node(data);
-        if (head == null) {
+    public void InsertFirst(int data){ // method for Insert First Node in Singly Linked List
+
+        Node N1 = new Node(data); // creating a new Node for insert
+        // There will two condition for inserting a first node
+
+        if (head == null) {  // may be List is empty
+
             head = N1;
             return;
         }
-        else {
+        else { // there is some node in singly linked list
             N1.Next = head;
             head = N1;
         }
