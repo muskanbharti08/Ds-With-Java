@@ -1,11 +1,11 @@
 public class InsertLastNode {
-    Node head; // Declare Head is Node
+    Node head; // Declares Head is Node
 
     class Node{
         int data;
         Node Next;
         public Node(int value){
-            this.data = value; // the contains any value
+            this.data = value; //  contains any value
             this.Next = null;  // Next Contains Null
         }
     }
