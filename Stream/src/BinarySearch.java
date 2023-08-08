@@ -1,7 +1,9 @@
 public class BinarySearch {
     public static void main(String[] args) {
         int [] Array = {2,5,7,12,23,34,45};
-        System.out.println(Search(Array,34));
+
+        int c = Search(Array , 34);
+        System.out.println(c);
 
     }
 
@@ -12,10 +14,11 @@ public class BinarySearch {
 
         while (low <= high){
             mid = (low+high) /2;
+
             if (Arr[mid] == x) {
                 return mid;
             }
-            else if (Arr[mid] == x) {
+            else if (Arr[mid] <= x) {
                 low = mid + 1;
             }
             else {
