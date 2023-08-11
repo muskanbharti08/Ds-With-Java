@@ -1,6 +1,7 @@
 public class InsertionSort {
     public static void main(String[] args) {
-        int [] Array = {2,3,4,87,98,56}; //  the given unsorted Array
+        int [] Array = {2,8,2,7,81,45,24,3,1,87,98,56}; //  the given unsorted Array
+        Insertion(Array);
 
         for (int i = 0; i < Array.length; i++) {
             System.out.print(Array[i]+" ");     // for printing  the array
