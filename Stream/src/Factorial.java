@@ -5,6 +5,6 @@ public class Factorial {
             System.out.print(i +" * ");
 
         }
-        
+
     }
 }

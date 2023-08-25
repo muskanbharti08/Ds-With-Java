@@ -7,5 +7,12 @@ public class TableOfTen {
             System.out.println(k+"*"+mul +"="+i);
             mul++;
         }
+        System.out.println("Table in reverse order");
+
+        // Table in Reverse order
+        for (int i = 10; i >=1; i--) {
+            System.out.println(k +"*"+i +"=" + i*k);
+
+        }
     }
 }
