@@ -16,7 +16,7 @@ public class MissingNumberOfAnArray {
         int Sum = n*(n+1)/2;
 
         for (int i = 0; i < Array.length; i++) {
-            
+
             Sum-=Array[i];
 
         }
