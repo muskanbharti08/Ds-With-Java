@@ -8,7 +8,7 @@ public class SelectionSort {
     }
 
     public static void SelectionSort(int [] ar){
-        for (int i = 0; i <ar.length ; i++) { // for term count
+        for (int i = 0; i <ar.length-1; i++) { // for term count
             int minPosition = i;
             for (int j = i+1; j <ar.length ; j++) {  // for sorted array
                 if(ar[minPosition]>ar[j]){

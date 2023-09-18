@@ -1,6 +1,6 @@
 public class Practice01 {
     public static void main(String[] args) {
-        int [] Array = {3,7,1,2,9,0,4,7,3,1,8,4};
+        int [] Array = {3,7,1,2,9,4,7,3,1,8,4};
         //BubbleSort(Array);
        // InsertationSOrt(Array);
         SelectionSort(Array);
@@ -54,9 +54,11 @@ public static void InsertationSOrt(int [] ar){
 }
 
 public static void SelectionSort(int [] ar){
-    for (int i = 0; i < ar.length; i++) {
+    int n = ar.length;
+    for (int i = 0; i < n-1; i++) {
+
         int minposition=i;
-        for (int j = i+1; j <ar.length ; j++) {
+        for (int j = i+1; j <n ; j++) {
             if (ar[minposition]>ar[j]) {
                 minposition =j;
             }
